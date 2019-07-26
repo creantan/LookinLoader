@@ -1,5 +1,5 @@
 # LookinLoader 
-[Lookin](https://lookin.work) 免费好用的 iOS UI 调试软件
+[Lookin](https://lookin.work) 免费好用的 iOS UI调试神器
 
 ![preview](https://github.com/creantan/LookinLoader/blob/master/example/preview.jpg "lookin" )
 
@@ -23,7 +23,7 @@
 
 ```
 
-**[下载Lookin](https://lookin.work)**
+**[下载Lookin客户端](https://lookin.work)**
 
 **[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.2/com.chinapyg.lookinloader_1.0.2_iphoneos-arm.deb.zip)**
 

@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 #include <dlfcn.h>
 
+%group UIDebug
 %hook UIResponder
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -12,6 +13,7 @@
         alertView.title = @"Lookin UIDebug菜单";
         [alertView addButtonWithTitle:@"审查元素2D"];
         [alertView addButtonWithTitle:@"3D视图"];
+        [alertView addButtonWithTitle:@"导出当前UI结构"];
         [alertView addButtonWithTitle:@"取消"];
         [alertView show];
     }
@@ -25,11 +27,13 @@
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_2D" object:nil];
         } else if (buttonIndex == 1) {//3D视图
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_3D" object:nil];
+        }else if (buttonIndex == 2) {//导出当前UI结构
+        	[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_Export" object:nil];
         }
     }
 }
 
-
+%end
 %end
 
 
@@ -47,6 +51,7 @@
 
 			if([fileManager fileExistsAtPath:libPath]) {
 				dlopen([libPath UTF8String], RTLD_NOW);
+				%init(UIDebug)
 				NSLog(@"[+] LookinLoader loaded!");
 			}
 		}

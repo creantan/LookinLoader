@@ -25,7 +25,7 @@
 
 **[下载Lookin](https://lookin.work)**
 
-**[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.1/com.chinapyg.lookinloader_1.0.1_iphoneos-arm.deb.zip)**
+**[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.2/com.chinapyg.lookinloader_1.0.2_iphoneos-arm.deb.zip)**
 
 **示例**
 

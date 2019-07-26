@@ -31,8 +31,15 @@
 
 ![设置](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "设置" )
 
+![开始](https://github.com/creantan/LookinLoader/blob/master/example/start.jpg "开始" )
+
 ![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
 
 ![手机3D视图](https://github.com/creantan/LookinLoader/blob/master/example/3dvew.png "3dview" )
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )
+
+**支持论坛：https://www.chinapyg.com**
+![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
+
+

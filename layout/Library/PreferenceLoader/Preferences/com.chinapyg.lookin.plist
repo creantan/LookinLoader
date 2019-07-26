@@ -1,0 +1,103 @@
+{
+  entry = {
+    cell = PSLinkCell;
+    label = Lookin;
+    icon = "lookin.png";
+    items = (
+      {
+        bundle = AppList;
+        isController = 1;
+        cell = PSLinkCell;
+        label = "Enabled Applications";
+        ALSettingsPath = "/var/mobile/Library/Preferences/com.chinapyg.lookin.plist";
+        ALSettingsKeyPrefix = "LookinEnabled-";
+        "ALSettingsDefaultValue" = "";
+        ALAllowsSelection = 1;
+        ALSectionDescriptors = (
+          {
+            items = ();
+            "footer-title" = "Select which applications to load Lookin into.";
+          },
+          {
+            title = "User Applications";
+            predicate = "isSystemApplication = FALSE";
+            "icon-size" = 29;
+            "suppress-hidden-apps" = 1;
+            "cell-class-name" = ALSwitchCell;
+          },
+          {
+            title = "System Applications";
+            predicate = "isSystemApplication = TRUE AND NOT (displayIdentifier IN {'com.iptm.bigboss.sbsettings', 'com.booleanmagic.overboard', 'eu.heinelt.ifile'})";
+            "icon-size" = 29;
+            "suppress-hidden-apps" = 1;
+            "cell-class-name" = ALSwitchCell;
+          },
+        );
+      },
+      {
+        bundle = "ExtensionListSettings";
+        isController = 1;
+        cell = PSLinkCell;
+        label = "Avaliable Extensions";
+        ALSettingsPath = "/var/mobile/Library/Preferences/com.chinapyg.lookin.plist";
+        ALSettingsKeyPrefix = "LookinEnabled-";
+        "ALSettingsDefaultValue" = "";
+        ALAllowsSelection = 1;
+        ALSectionDescriptors = (
+          {
+            items = ();
+            "footer-title" = "Select which Plugins to load Reveal into.";
+          },
+          {
+            title = "Custom Keyboard";
+            predicate = "protocol contains 'keyboard-service'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+          {
+            title = "share Extensions";
+            predicate = "protocol contains 'share-services'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+          {
+            title = "AppleWatch App";
+            predicate = "protocol contains 'watchkit'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+          {
+            title = "Today Extensions";
+            predicate = "protocol contains 'widget-extension'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+          {
+            title = "Action Extensions";
+            predicate = "protocol contains 'ui-services'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+          {
+            title = "PhotoEditing Extensions";
+            predicate = "protocol contains 'photo-editing'";
+            "icon-size" = 29;
+            "cell-class-name" = ELSwitchCell;
+          },
+        );
+      },
+      {
+        cell = PSGroupCell;
+        footerText = "This tweak is not officially supported. For more information about Lookin.app and runtime debugging see https://lookin.work/";
+      },
+      {
+        cell = PSGroupCell;
+        footerText = "\nLookinLoader is released under BSD license.\nCopyright (c) 2019 creantan. All rights reserved.";
+      },
+      {
+        cell = PSGroupCell;
+        footerText = "\n中国飘云阁: https://www.chinapyg.com\n";
+      },
+    );
+  };
+}

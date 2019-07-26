@@ -39,7 +39,9 @@
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )
 
-**支持论坛：https://www.chinapyg.com**
-![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
+**获取更多信息**
 
+**支持论坛**：[www.chinapyg.com](https://www.chinapyg.com)
+
+![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
 

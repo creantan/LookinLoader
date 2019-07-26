@@ -15,6 +15,8 @@
 
 ```
 插件支持 iOS8~iOS12，可自行编译或者直接下载安装包
+- 支持系统设置
+- 支持摇一摇打开UI调试菜单
 ```
 
 **[下载Lookin](https://lookin.work)**
@@ -28,5 +30,7 @@
 ![Lookin](https://github.com/creantan/LookinLoader/blob/master/example/Lookin.jpeg "Lookin" )
 
 ![App列表](https://github.com/creantan/LookinLoader/blob/master/example/app.png "App列表" )
+
+![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )

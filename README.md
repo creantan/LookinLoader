@@ -1,5 +1,5 @@
 # LookinLoader 
-[Lookin](https://lookin.work) 免费好用的 iOS UI 调试软件
+[Lookin](https://lookin.work) 免费好用的 iOS UI调试神器
 
 ![preview](https://github.com/creantan/LookinLoader/blob/master/example/preview.jpg "lookin" )
 
@@ -14,14 +14,18 @@
 ```
 
 ```
+
 插件支持 iOS8~iOS12，可自行编译或者直接下载安装包
-- 支持系统设置
-- 支持摇一摇打开UI调试菜单
+
+· 支持系统设置
+
+· 支持摇一摇打开UI调试菜单
+
 ```
 
-**[下载Lookin](https://lookin.work)**
+**[下载Lookin客户端](https://lookin.work)**
 
-**[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.1/com.chinapyg.lookinloader_1.0.1_iphoneos-arm.deb.zip)**
+**[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.2/com.chinapyg.lookinloader_1.0.2_iphoneos-arm.deb.zip)**
 
 **示例**
 
@@ -32,5 +36,7 @@
 ![App列表](https://github.com/creantan/LookinLoader/blob/master/example/app.png "App列表" )
 
 ![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
+
+![手机3D视图](https://github.com/creantan/LookinLoader/blob/master/example/3dvew.png "3dview" )
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )

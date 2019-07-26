@@ -1,5 +1,5 @@
-# LookinLoader
-[Lookin](https://lookin.work) 免费好用的 iOS UI 调试软件插件
+# LookinLoader 
+[Lookin](https://lookin.work) 免费好用的 iOS UI 调试软件
 
 ![preview](https://github.com/creantan/LookinLoader/blob/master/example/preview.jpg "lookin" )
 
@@ -14,7 +14,7 @@
 ```
 
 ```
-支持 iOS8~iOS12，可自行编译或者直接下载安装包
+插件支持 iOS8~iOS12，可自行编译或者直接下载安装包
 ```
 
 **[下载Lookin](https://lookin.work)**

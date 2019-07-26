@@ -46,7 +46,7 @@
         ALSectionDescriptors = (
           {
             items = ();
-            "footer-title" = "Select which Plugins to load Reveal into.";
+            "footer-title" = "Select which Plugins to load Lookin into.";
           },
           {
             title = "Custom Keyboard";

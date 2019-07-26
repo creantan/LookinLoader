@@ -1,5 +1,6 @@
 # LookinLoader 
 [Lookin](https://lookin.work) 免费好用的 iOS UI调试神器
+由于Lookin官方没有提供越狱版的集成，给逆向分析人员造成不便，因此编写这个支持iOS8~iOS12的插件，取名为LookinLoader
 
 ![preview](https://github.com/creantan/LookinLoader/blob/master/example/preview.jpg "lookin" )
 

@@ -31,9 +31,9 @@
 
 ![设置](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "设置" )
 
-![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
-
 ![开始](https://github.com/creantan/LookinLoader/blob/master/example/start.jpg "开始" )
+
+![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
 
 ![手机3D视图](https://github.com/creantan/LookinLoader/blob/master/example/3dvew.png "3dview" )
 

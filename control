@@ -1,7 +1,7 @@
 Package: com.chinapyg.lookinloader
 Name: LookinLoader
 Depends: mobilesubstrate, preferenceloader, applist
-Version: 1.0.1
+Version: 1.0.4
 Architecture: iphoneos-arm
 Description: An awesome Lookin Loader for iOS8~iOS12!(https://www.chinapyg.com)
 Maintainer: creantan/P.Y.G

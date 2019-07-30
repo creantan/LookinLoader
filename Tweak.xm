@@ -52,7 +52,7 @@
 		if (appEnabled) {
 			NSFileManager* fileManager = [NSFileManager defaultManager];
 
-			NSString* libPath = @"/usr/lib/LookinServer.framework/LookinServer";
+			NSString* libPath = @"/usr/lib/Lookin/LookinServer.framework/LookinServer";
 
 			if([fileManager fileExistsAtPath:libPath]) {
 				dlopen([libPath UTF8String], RTLD_NOW);

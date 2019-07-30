@@ -29,6 +29,13 @@
 
 **[下载插件安装包](https://github.com/creantan/LookinLoader/releases/download/1.0.2/com.chinapyg.lookinloader_1.0.2_iphoneos-arm.deb.zip)**
 
+**手动编译**
+```bash
+git clone --recursive https://github.com/creantan/LookinLoader.git
+cd LookinLoader
+make package FINALPACKAGE=1
+```
+
 **示例**
 
 ![设置](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "设置" )

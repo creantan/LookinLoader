@@ -1,58 +1,64 @@
-# LookinLoader 
-[Lookin](https://lookin.work) 免费好用的 iOS UI调试神器
+<h1 align="center">
+  <img src="https://github.com/creantan/LookinLoader/blob/master/example/LookinLoader.png">
+  <br/>
+  LookinLoader
+</h1>
 
-由于Lookin官方没有提供越狱版的集成，给逆向分析人员造成不便，因此参考RevealLoader编写了这个支持iOS8~iOS12的插件，取名为LookinLoader
+<p align="center"><b>Compatible with iOS 8 to 12</b></p>
+
+[Lookin](https://lookin.work) Free macOS App for iOS View Debugging
+
+<p>
+	Because Lookin official did not provide the jailbreak version of the integration, causing inconvenience to the reverse analyst, so refer to RevealLoader to write this plugin that supports iOS8~iOS12, named LookinLoader
+
+	LookinLoader dynamically loads LookinServer (Lookin.app support) into iOS apps on jailbroken devices. Configuration is via the Lookin menu in Settings.app.
+</p>
 
 ![preview](https://github.com/creantan/LookinLoader/blob/master/example/preview.jpg "lookin" )
 
-```
-  Lookin 可以查看与修改 iOS App 里的 UI 对象，类似于 Xcode 自带的 UI Inspector 工具，或另一款叫做 Reveal 的软件。
+<p>
+	You can inspect and modify views in iOS app via Lookin, just like UI Inspector in Xcode, or another app called Reveal.
 
-  但借助于“控制台”和“方法监听”功能，Lookin 还可以进行 UI 之外的调试。
+	And you can do more with features like Console or Method Trace.
+	Moreover, Lookin can run on your iPhone or iPad without connecting to a Mac.
+	And one more thing, Lookin is free.
+</p>
 
-  此外，虽然 Lookin 主体是一款 macOS 程序，它亦可嵌入你的 iOS App 而单独运行在 iPhone 或 iPad 上。
+#### Features
 
-  最后，Lookin 完全免费。
-```
++ Configure options from Settings
++ Shake to show UIDebug Menu
 
-```
 
-插件支持 iOS8~iOS12，可自行编译或者直接下载安装包
+#### Download
 
-· 支持系统设置
+**[Download Lookin App](https://lookin.work)**
 
-· 支持摇一摇打开UI调试菜单
+**[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.3/com.chinapyg.lookinloader_1.0.3_iphoneos-arm.deb.zip)**
 
-```
+#### Building
 
-**[下载Lookin客户端](https://lookin.work)**
-
-**[下载插件安装包](https://github.com/creantan/LookinLoader/releases)**
-
-**手动编译**
 ```bash
 git clone --recursive https://github.com/creantan/LookinLoader.git
-cd LookinLoader/layout/usr/lib/Lookin/LookinServer.framework/
-ldid -S LookinServer
-cd ../../../../..
+cd LookinLoader
 make package FINALPACKAGE=1
 ```
 
-**示例**
+#### Samples
 
-![设置](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "设置" )
+![Setting](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "Setting" )
 
-![开始](https://github.com/creantan/LookinLoader/blob/master/example/start.jpg "开始" )
+![start](https://github.com/creantan/LookinLoader/blob/master/example/start.jpg "start" )
 
-![摇一摇](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "摇一摇" )
+![Shake](https://github.com/creantan/LookinLoader/blob/master/example/debugui.png "Shake" )
 
-![手机3D视图](https://github.com/creantan/LookinLoader/blob/master/example/3dvew.png "3dview" )
+![3D Debug](https://github.com/creantan/LookinLoader/blob/master/example/3dvew.png "3dview" )
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )
 
-**获取更多信息**
+####For more information
 
-**支持论坛**：[www.chinapyg.com](https://www.chinapyg.com)
+* community：[www.chinapyg.com](https://www.chinapyg.com)
 
 ![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
 

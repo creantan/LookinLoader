@@ -36,7 +36,7 @@
 
 ***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.3/com.chinapyg.lookinloader_1.0.3_iphoneos-arm.deb.zip)***
 
-## Building
+## Easy build
 
 ```bash
 git clone --recursive https://github.com/creantan/LookinLoader.git

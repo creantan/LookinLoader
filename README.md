@@ -40,7 +40,9 @@
 
 ```bash
 git clone --recursive https://github.com/creantan/LookinLoader.git
-cd LookinLoader
+cd layout/usr/lib/Lookin/LookinServer.framework/
+ldid -S LookinServer
+cd ../../../../../
 make package FINALPACKAGE=1
 ```
 

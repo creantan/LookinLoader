@@ -10,6 +10,8 @@
 
 <p>
 	Because Lookin official did not provide the jailbreak version of the integration, causing inconvenience to the reverse analyst, so refer to RevealLoader to write this plugin that supports iOS8~iOS12, named LookinLoader
+</p>
+<p>
 	LookinLoader dynamically loads LookinServer (Lookin.app support) into iOS apps on jailbroken devices. Configuration is via the Lookin menu in Settings.app.
 </p>
 
@@ -22,19 +24,19 @@
 	And one more thing, Lookin is free.
 </p>
 
-#### Features
+## Features
 
 + Configure options from Settings
 + Shake to show UIDebug Menu
 
 
-#### Download
+## Download
 
-**[Download Lookin App](https://lookin.work)**
+***[Download Lookin App](https://lookin.work)***
 
-**[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.3/com.chinapyg.lookinloader_1.0.3_iphoneos-arm.deb.zip)**
+***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.3/com.chinapyg.lookinloader_1.0.3_iphoneos-arm.deb.zip)***
 
-#### Building
+## Building
 
 ```bash
 git clone --recursive https://github.com/creantan/LookinLoader.git
@@ -42,7 +44,7 @@ cd LookinLoader
 make package FINALPACKAGE=1
 ```
 
-#### Samples
+## Samples
 
 ![Setting](https://github.com/creantan/LookinLoader/blob/master/example/setting.jpeg "Setting" )
 
@@ -54,9 +56,9 @@ make package FINALPACKAGE=1
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )
 
-#### For more information
+## For more information
 
-* community：[www.chinapyg.com](https://www.chinapyg.com)
+### community：[www.chinapyg.com](https://www.chinapyg.com)
 
 ![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
 

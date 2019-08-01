@@ -20,7 +20,7 @@
 }
 
 %new
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (alertView.tag == 0) {
         
         if (buttonIndex == 0) {//审查元素2D
@@ -30,7 +30,7 @@
         }else if (buttonIndex == 2) {//导出当前UI结构
         	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 				/*
-					修复弹出UIDebug菜单导致无法正确弹出UIDocumentInteractionController问题，延后1秒等UIDebug菜单消失
+					修复弹出UIDebug菜单导致QQ无法正确弹出UIDocumentInteractionController问题，延后1秒等UIDebug菜单消失
 				*/
 				[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_Export" object:nil];
 			});
@@ -55,9 +55,14 @@
 			NSString* libPath = @"/usr/lib/Lookin/LookinServer.framework/LookinServer";
 
 			if([fileManager fileExistsAtPath:libPath]) {
-				dlopen([libPath UTF8String], RTLD_NOW);
-				%init(UIDebug)
-				NSLog(@"[+] LookinLoader loaded!");
+				void *lib = dlopen([libPath UTF8String], RTLD_NOW);
+				if (lib) {
+					%init(UIDebug)
+					NSLog(@"[+] LookinLoader loaded!");
+				}else {
+					char* err = dlerror();
+					NSLog(@"[+] LookinLoader load failed:%s",err);
+				}
 			}
 		}
 

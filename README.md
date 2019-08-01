@@ -10,7 +10,6 @@
 
 <p>
 	Because Lookin official did not provide the jailbreak version of the integration, causing inconvenience to the reverse analyst, so refer to RevealLoader to write this plugin that supports iOS8~iOS12, named LookinLoader
-
 	LookinLoader dynamically loads LookinServer (Lookin.app support) into iOS apps on jailbroken devices. Configuration is via the Lookin menu in Settings.app.
 </p>
 
@@ -18,7 +17,6 @@
 
 <p>
 	You can inspect and modify views in iOS app via Lookin, just like UI Inspector in Xcode, or another app called Reveal.
-
 	And you can do more with features like Console or Method Trace.
 	Moreover, Lookin can run on your iPhone or iPad without connecting to a Mac.
 	And one more thing, Lookin is free.
@@ -56,7 +54,7 @@ make package FINALPACKAGE=1
 
 ![UI](https://github.com/creantan/LookinLoader/blob/master/example/ui.png "UI" )
 
-####For more information
+#### For more information
 
 * community：[www.chinapyg.com](https://www.chinapyg.com)
 

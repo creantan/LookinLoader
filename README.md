@@ -4,12 +4,12 @@
   LookinLoader
 </h1>
 
-<p align="center"><b>Compatible with iOS 8 to 12</b></p>
+<p align="center"><b>Compatible with iOS 8 to 13</b></p>
 
 [Lookin](https://lookin.work) Free macOS App for iOS View Debugging
 
 <p>
-	Because Lookin official did not provide the jailbreak version of the integration, causing inconvenience to the reverse analyst, so refer to RevealLoader to write this plugin that supports iOS8~iOS12, named LookinLoader
+	Because Lookin official did not provide the jailbreak version of the integration, causing inconvenience to the reverse analyst, so refer to RevealLoader to write this plugin that supports iOS8~iOS13, named LookinLoader
 </p>
 <p>
 	LookinLoader dynamically loads LookinServer (Lookin.app support) into iOS apps on jailbroken devices. Configuration is via the Lookin menu in Settings.app.
@@ -34,7 +34,7 @@
 
 ***[Download Lookin App](https://lookin.work)***
 
-***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.3/com.chinapyg.lookinloader_1.0.3_iphoneos-arm.deb.zip)***
+***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/1.0.5/com.chinapyg.lookinloader_1.0.5_iphoneos-arm.deb.zip)***
 
 ## Easy build
 

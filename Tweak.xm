@@ -10,11 +10,11 @@
         UIAlertView *alertView = [[UIAlertView alloc] init];
         alertView.delegate = self;
         alertView.tag = 0;
-        alertView.title = @"Lookin UIDebug菜单";
-        [alertView addButtonWithTitle:@"审查元素2D"];
-        [alertView addButtonWithTitle:@"3D视图"];
-        [alertView addButtonWithTitle:@"导出当前UI结构"];
-        [alertView addButtonWithTitle:@"取消"];
+        alertView.title = @"Lookin UIDebug";
+        [alertView addButtonWithTitle:@"2D Inspection"];
+        [alertView addButtonWithTitle:@"3D Inspection"];
+        [alertView addButtonWithTitle:@"Export"];
+        [alertView addButtonWithTitle:@"Cancel"];
         [alertView show];
     }
 }

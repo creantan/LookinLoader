@@ -61,6 +61,7 @@ make package FINALPACKAGE=1
 ## For more information
 
 ### community：[www.chinapyg.com](https://www.chinapyg.com)
+### QQ:865130685
 
 ![公众号](https://github.com/creantan/LookinLoader/blob/master/example/qrcode.jpg "公众号" )
 

@@ -34,7 +34,7 @@
 
 ***[Download Lookin App](https://lookin.work)***
 
-***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/v1.0.6/com.chinapyg.lookinloader_1.0.6-1_iphoneos-arm.deb.zip)***
+***[Download Tweak](https://github.com/creantan/LookinLoader/releases/download/v1.0.7/com.chinapyg.lookinloader_1.0.7-1_iphoneos-arm.deb)***
 
 ## Easy build
 
@@ -45,6 +45,16 @@ ldid -S LookinServer
 cd ../../../../../
 make package FINALPACKAGE=1
 ```
+
+## Frida script (load into any process)
+```
+let lookinLoaderPath = "/usr/lib/Lookin/LookinServer.framework/LookinServer"
+let lkModule = Module.load(lookinLoaderPath)
+console.log('[+]module name:',lkModule.name)
+console.log('[+]module path:',lkModule.path)
+console.log('[+]module base:',lkModule.base)
+```
+frida -U -l a.js -p PID
 
 ## Samples
 

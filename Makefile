@@ -7,6 +7,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = LookinLoader
 LookinLoader_FILES = Tweak.xm
 LookinLoader_FRAMEWORKS = UIKit
+LookinLoader_CFLAGS = -fobjc-arc -Wdeprecated-declarations -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

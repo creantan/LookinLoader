@@ -4,37 +4,36 @@
 %group UIDebug
 
 %hook UIResponder
-
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
-
-		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Lookin UIDebug" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-
-		[alertController addAction:[UIAlertAction actionWithTitle:@"3D Inspection" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-		    [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_3D" object:nil];
-		}]];
-
-		[alertController addAction:[UIAlertAction actionWithTitle:@"2D Inspection" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-		    [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_2D" object:nil];
-		}]];
-
-		[alertController addAction:[UIAlertAction actionWithTitle:@"Export" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-		    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIAlertView *alertView = [[UIAlertView alloc] init];
+        alertView.delegate = self;
+        alertView.tag = 0;
+        alertView.title = @"Lookin UIDebug";
+        [alertView addButtonWithTitle:@"2D Inspection"];
+        [alertView addButtonWithTitle:@"3D Inspection"];
+        [alertView addButtonWithTitle:@"Export"];
+        [alertView addButtonWithTitle:@"Cancel"];
+        [alertView show];
+    }
+}
+%new
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 0) {
+        if (buttonIndex == 0) {
+			[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_2D" object:nil];
+        } else if (buttonIndex == 1) {
+			[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_3D" object:nil];
+        }else if (buttonIndex == 2) {
+        	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+				
 				[[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_Export" object:nil];
 			});
-		}]];
-
-		[alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-
-		}]];
-		UIViewController* vc = [UIApplication sharedApplication].keyWindow.rootViewController;
-	
-		[vc presentViewController:alertController animated:YES completion:nil];
+        }
     }
 }
 %end
 %end
-
 
 %ctor{
 
